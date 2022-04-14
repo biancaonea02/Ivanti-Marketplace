@@ -1,0 +1,36 @@
+<app-store-intro></app-store-intro>
+
+<div class="filter-bar">
+    <div class="sort-by">
+        <div class="sortContainer">
+            <p class="sort">Search by name</p>
+            <input class="sortInput" name="searchTerm" #searchInput="ngModel" ngModel
+                (ngModelChange)="searchPackagesByName(searchInput.value)" type="search" placeholder="Search by name...">
+        </div>
+        <div class="sortContainer">
+            <p class="sort">Search by creator</p>
+            <input class="sortInput" name="searchTerm" #searchInput1="ngModel" ngModel
+                (ngModelChange)="searchPackagesByCreator(searchInput1.value)" type="search"
+                placeholder="Search by creator...">
+        </div>
+    </div>
+</div>
+
+<div class="packagesContainer">
+    <table *ngFor="let package of packages">
+        <app-package [id]="package.id" [title]="package.title" [intro]="package.intro"></app-package>
+    </table>
+    <!-- <app-package ></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package>
+    <app-package></app-package> -->
+
+
+
+
+</div>

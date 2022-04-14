@@ -1,0 +1,22 @@
+
+.manage-packages-add-package-button {
+    margin: 50px;
+	background:linear-gradient(to bottom, #5f10c7 5%, #481da3 100%);
+	background-color:#5f10c7;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:12px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5d29ab;
+}
+.manage-packages-add-package-button:hover {
+	background:linear-gradient(to bottom, #481da3 5%, #5f10c7 100%);
+	background-color:#481da3;
+}
+.manage-packages-add-package-button:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,300 @@
+.package-page-info
+{
+	margin-top: 50px;
+}
+
+.image-download img{
+	width: 350px;
+	height: 250px;
+	align-items: center;
+}
+
+.image-download
+{
+	display: flex;
+	flex-direction: column;
+	margin: 18px 20px;
+}
+
+.package-name
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.package-name div
+{
+  margin-left: 20px;
+}
+
+.download-button
+{
+	width: fit-content;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px 50px;
+    background: linear-gradient(90deg, rgba(226,18,37,1) 19%, rgba(76,4,139,1) 52%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+}
+
+.download-button:hover
+{
+    background: linear-gradient(90deg, rgba(76,4,139,1) 24%, rgba(226,18,37,1) 58%);
+}
+
+.single-package-card
+{
+    background-color: #F7F7F7;
+    position: relative;
+}
+
+.single-package-card
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.package-details
+{
+	margin: 18px 20px;
+}
+
+.package-name h1
+{
+	font-size: 30px;
+}
+
+.package-subtitle h2
+{
+	font-size: 20px;
+}
+
+.package-description
+{
+	font-size: 17px;
+}
+
+.buttons-details
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.btn-menus
+{
+  font-size: 20px;
+  background-color: #3E065F;
+  border-color: #fff;
+  color: #fff;
+  padding: 2px 30px;
+}
+
+.btn-menus:hover
+{
+	background-color: #700B97;
+}
+
+.menu-info, .menu-download
+{
+	margin: 18px 20px;
+}
+
+.menu-info h1, .menu-download h1
+{
+	font-weight: 500;
+}
+
+.menu-info p 
+{
+	font-size: 17px;
+}
+
+.menu-download
+{
+	margin-top: 60px;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid rgb(150, 141, 141);
+}
+		
+  th, td 
+  {
+	text-align: left;
+	padding: 8px;
+	border: 0.5px solid gray;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  th:last-child
+  {
+	width: 30%;
+  }
+
+  .download-version
+  {
+	width: fit-content;
+	margin: auto;
+	padding: 2px 10px;
+    background: linear-gradient(90deg, rgba(226,18,37,1) 19%, rgba(76,4,139,1) 52%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+  }
+  
+
+  .user-ratings
+{
+    box-sizing: border-box;
+    font-family: Arial;
+    /* margin: 20px 30px; */
+    max-width: 100%; /* Max width */
+    padding: 30px 20px;
+    background-color: #F7F7F7;
+}
+  
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+
+  .row
+  {
+    padding-left: 20px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  .bar-5 {height: 18px; background-color: #04AA6D;}
+  .bar-4 {height: 18px; background-color: #2196F3;}
+  .bar-3 {height: 18px; color: primary;}
+  .bar-2 {height: 18px; background-color: #ff9800;}
+  .bar-1 {height: 18px; background-color: #f44336;}
+  
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+
+  .leave-rating
+  {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .leave-rating h2, ngb-rating
+  {
+    padding: 10px 20px;
+  }
+
+  .leave-rating h2
+  {
+    font-size: 25px;
+  }
+
+
+ngb-rating
+{
+  color: #FFE400;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 40px;
+}
+
+.rate-heading
+{
+  font-weight: normal;
+}
+
+.add-rating
+{
+    color:#ffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .4rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(226,18,37,1) 19%, rgba(76,4,139,1) 52%);
+    resize: none;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-rating:hover
+{
+    background: linear-gradient(90deg, rgba(76,4,139,1) 24%, rgba(226,18,37,1) 58%);
+}
+
+.add-rating-message
+{
+  font-weight: 600;
+  margin-top: 15px;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.addRemoveFavouritePackage{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+
+.yellow-color
+{
+  color: #FFC900;
+}
+
+.stars-rating i
+{
+  font-size: 20px;
+}

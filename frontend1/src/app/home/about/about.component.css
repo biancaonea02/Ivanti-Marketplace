@@ -1,0 +1,130 @@
+.homeFeatureSection{
+    width: 100%;
+      min-height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  
+  /* first container with the image on the left */
+  
+  .homeFeatureContainer{
+    width: 90%;
+      display: block;
+      margin:auto;
+    padding: 20px;
+  }
+  .imgLeft{
+      float: left;
+      width: 40%;
+  }
+  .imgLeft img, .imgRight img{
+      width: 100%;
+      height: auto;
+    border-radius: 2%;
+  }
+  
+  .contentRight{
+      float: right;
+      width: 55%;
+  
+  }
+  
+  
+  .homeFeatureTitle h2{
+    font-size: 50px;
+    margin: 0;
+    padding-top: 10px;
+  }
+  .homeFeatureTitle h4{
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    color: gray;
+    padding: 15px 0;
+  }
+  
+  .buttonHomeFeature{
+    width: fit-content;
+    /* padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px; */
+    padding: 5px 10px;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(92,92,92,0.17);
+    box-shadow: 0px 0px 11px 1px rgba(92,92,92,0.17);
+    transition: 0.5s;
+    color: red;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+  }
+  
+  /* .buttonHomeFeature h2{
+    color: red;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  
+  .buttonHomeFeature:hover{
+    background-color: #663399;
+  }
+  
+  .buttonHomeFeature:hover{
+    color: white;
+  }
+  
+  /* second container with the image on the right */
+  
+  .contentLeft{
+      float: left;
+      width: 55%;
+  
+  }
+  .imgRight{
+      float: right;
+      width: 40%;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+      .homeFeatureContainer{
+      width: 80%;
+      display: flex;
+    flex-direction: column;
+      margin:auto;
+      padding-top:50px;
+  }
+  .contentRight, .contentLeft{
+      float:none;
+      width:100%;
+      display: block;
+      margin:auto;
+  }
+  .imgRight, .imgLeft{
+      float:none;
+      width:100%;
+    padding-bottom: 20px
+  
+  }
+  .imgRight img, .imgLeft img{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin:auto;
+  }
+  .contentRight .homeFeatureTitle, .contentLeft .homeFeatureTitle{
+      text-align: center;
+      font-size: 19px;
+  }
+  .buttonHomeFeature{
+      text-align: center;
+    width: 100%;
+  
+  }
+  .buttonHomeFeature a{
+      padding:9px 30px;
+  }
+  
+  
+  }

@@ -1,0 +1,61 @@
+.store-hero
+{
+    width: 100%;
+    height: 100vh;
+    background: url("../../../assets/images/background.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+}
+
+.store-intro-container
+{
+    margin: 10px auto;
+    padding: 0 50px;
+}
+
+.store-main-heading
+{
+    color: #ffff;
+    line-height: 50;
+    text-shadow: 1px 1px 1rem rgba(0, 0, 0, .5);
+    margin-bottom: 2.5rem;
+    margin-top: 50px;
+}
+
+.store-title{
+    font-size: 45px;
+    text-align: center;
+}
+
+.store-subtitle{
+    text-align: center;
+
+}
+
+.intro-top-packages{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.top-package{
+    width: 30%;
+    margin: auto 2%;
+    text-align: center;
+}
+
+.top-package img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.top-package mat-card-title{
+    margin: 15px 0;
+}
+
+a{
+    text-decoration: none;
+}

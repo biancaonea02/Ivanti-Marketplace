@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: justify;
+}
+
+img {
+    margin-bottom: 2%;
+}
+
+.back {
+    color: primary;
+    float: left;
+}
+
+.next {
+    color: primary;
+    float: right;
+}
+.socialMediaContainerIntro{
+    margin: 20px auto 140px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaContainerIntro a{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background-color: rgba(212, 83, 9, 0.479);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.fab {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+.socialMediaContainerIntro a:hover{
+	color: #24262b;
+	background-color: #fda697;
+}
+.step3 {
+    align-items: center;
+}

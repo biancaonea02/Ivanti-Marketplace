@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Crystal_Clear_kdm_user_female.svg" alt="user"
+            width="100">
+        <h4>{{loggedInUser.name}}</h4>
+    </div>
+    <form #updateProfileForm="ngForm" (ngSubmit)="onUpdateCurrentUser(name.value, email.value)">
+
+        <div class="right">
+            <div class="info">
+                <h3>Current Information</h3>
+                <div class="info_data">
+                    <div class="data">
+                        <h4>Email</h4>
+                        <input type="text" #email name="email" required placeholder={{loggedInUser.email}}
+                            [(ngModel)]="loggedInUser.email">
+                    </div>
+                    <div class="data">
+                        <h4>Full Name</h4>
+                        <input type="text" #name name="name" required placeholder={{loggedInUser.name}}
+                            [(ngModel)]="loggedInUser.name">
+                    </div>
+                    <div class="data">
+                        <h4>Username</h4>
+                        <input type="text" value={{loggedInUser.username}} readonly>
+                        <p class="note-username">The username can not be modified</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <ul>
+                    <button type="submit" mat-raised-button target="_blank">Update Profile</button>
+                    <!-- de schimbat marginea la buton si facut styling la pagina -->
+                </ul>
+            </div>
+            <p class="update-message">{{message}}</p>
+        </div>
+    </form>
+
+</div>

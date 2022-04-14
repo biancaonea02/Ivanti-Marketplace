@@ -1,0 +1,109 @@
+.filter-bar
+{
+    background-color: #f5f5f5;    font-size: 18px;
+    padding: 20px;
+}
+
+.filter-by-type
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.sort-by
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 0px 20px;
+}
+
+.type, .sort
+{
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.type-checkbox
+{
+    margin-left: 50px;
+}
+
+.type-checkbox, .name-checkbox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-by-combobox, .sort-button
+{
+    margin-left: 90px;
+}
+
+/* .sort-by-combobox
+{
+    width: 100px;
+} */
+
+.sort-button{
+    width: fit-content;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(92,92,92,0.17);
+    box-shadow: 0px 0px 11px 1px rgba(92,92,92,0.17);
+    transition: 0.5s;
+  }
+  
+  .sort-button {
+    background-color: red;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+  }
+  
+  .sort-button:hover{
+    background-color: #663399;
+    border-color: #663399;
+  }
+  
+  .sort-button:hover {
+    color: white;
+  }
+
+@media screen and (max-width:1000px)
+{
+    .filter-by-type, .sort-by
+   {
+    flex-direction: column;
+   }
+
+   .filter-bar
+   {
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     padding-top: 50px;
+   }
+
+    .name-checkbox, .type-checkbox
+   {
+    flex-direction: column;
+   }
+
+}
+.packagesContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sortContainer{
+  display: flex;
+  margin: 2px 20px;
+  margin: auto;
+}
+
+.sortInput{
+  width: 300px;
+}

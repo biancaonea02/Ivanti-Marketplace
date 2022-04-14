@@ -1,0 +1,128 @@
+<div class="package-page-info">
+    <div class="single-package-card">
+        <div class="image-download">
+            <img src="../../assets/images/package_img.png" alt="Package image">
+            <!-- <button class="download-button">Download</button> -->
+        </div>
+        <div class="package-details">
+            <div class="package-name">
+                <h1>{{package.title}}</h1>
+
+            </div>
+            <div class="package-subtitle">
+                <h2>Creator: {{package.creator.name}}</h2>
+            </div>
+            <div class="package-description">
+                <p>
+                    {{package.intro}}
+                </p>
+            </div>
+            <button class="addRemoveFavouritePackage" mat-raised-button
+                (click)="removePackageFromFavourites(user.id, package.id)" *ngIf="isPackageFavourite">
+                Remove from favourites
+                <mat-icon>star</mat-icon>
+            </button>
+            <button class="addRemoveFavouritePackage" mat-raised-button
+                (click)="addPackageToFavourites(user.id, package.id)" *ngIf="!isPackageFavourite">
+                Add to favourites
+                <mat-icon>star</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="buttons-details">
+        <button type="button" class="btn-menus" (click)="showOverview()">Overview</button>
+        <!-- <button type="button" class="btn-menus" (click)="showReviews()">Reviews</button> -->
+        <button type="button" class="btn-menus" (click)="showSystemRequirements()">System requirements</button>
+    </div>
+    <div class="menu-info">
+        <h1 class="package-info-title" id="package-info-title">Overview</h1>
+        <p class="package-info-description" id="package-info-description">{{this.package.description}}</p>
+    </div>
+    <div class="user-ratings">
+        <span class="heading">User Rating</span>
+        <span class="stars-rating" *ngFor="let star of showIcon()">
+            <i class="{{star}}"></i>
+        </span>
+        <p>{{averageRating}} average based on {{nrReviews}} reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+
+        <div class="row">
+            <div class="side">
+                <div>5 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <mat-progress-bar mode="determinate" value="{{barLengh5}}" class="bar-3"></mat-progress-bar>
+                </div>
+            </div>
+            <div class="side right">
+                <div>{{nrReviews5}}</div>
+            </div>
+            <div class="side">
+                <div>4 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <mat-progress-bar mode="determinate" value="{{barLengh4}}" class="bar-3"></mat-progress-bar>
+                </div>
+            </div>
+            <div class="side right">
+                <div>{{nrReviews4}}</div>
+            </div>
+            <div class="side">
+                <div>3 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <mat-progress-bar mode="determinate" value="{{barLengh3}}" class="bar-3"></mat-progress-bar>
+                </div>
+            </div>
+            <div class="side right">
+                <div>{{nrReviews3}}</div>
+            </div>
+            <div class="side">
+                <div>2 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <mat-progress-bar mode="determinate" value="{{barLengh2}}" class="bar-3"></mat-progress-bar>
+                </div>
+            </div>
+            <div class="side right">
+                <div>{{nrReviews2}}</div>
+            </div>
+            <div class="side">
+                <div>1 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <mat-progress-bar mode="determinate" value="{{barLengh1}}" class="bar-3"></mat-progress-bar>
+                </div>
+            </div>
+            <div class="side right">
+                <div>{{nrReviews1}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="leave-rating">
+        <h2 class="rate-heading">Rate this package</h2>
+        <ngb-rating [max]="5" [(rate)]="currentRate" class="star-ratings"></ngb-rating>
+        <button (click)="submitRating()" class="add-rating">Submit Rating</button>
+        <p class="add-rating-message">{{submitReviewMessage}}</p>
+    </div>
+    <div class="menu-download">
+        <h1 class="download" id="download">Download</h1>
+        <table>
+            <tr *ngFor="let version of versions">
+                <th>{{package.title}}</th>
+                <th>{{version.name}}</th>
+                <th>
+                    <button class="download-version" id="download"
+                        (click)="downloadVersion(version.name, version.readme)" type="button"><i
+                            class="fa fa-download"></i> Download
+                        Version</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>

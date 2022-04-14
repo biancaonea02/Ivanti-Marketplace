@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="navbar">
+    <div>
+        <a><img src="../assets/images/Ivanti_Logo_RGB_white.png" alt="Ivanti_Logo_White" class="logo"></a>
+    </div>
+    <div class="routes">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/store">Store</a>
+        <a [hidden]="!isContentCreator" routerLink="/manage-packages">Manage Packages</a>
+        <a [hidden]="isNone" routerLink="/profile-page">Profile Page</a>
+        <a [hidden]="!isNone" routerLink="/login">Log In</a>
+        <a [hidden]="!isNone" routerLink="/register">Create Account</a>
+        <a [hidden]="isNone" (click)="logOut()">Log Out</a>
+    </div>
+    <button (click)="toggle()" class="hamburger">
+        <img *ngIf="showMenu" src="../../assets/images/hamburger_button.svg" alt="menu" class="menuIcon">
+        <img *ngIf="showMenu == false" src="../../assets/images/close_button.svg" alt="close" class="closeIcon">
+    </button>
+</mat-toolbar>

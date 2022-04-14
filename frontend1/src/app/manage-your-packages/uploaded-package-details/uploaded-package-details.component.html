@@ -1,0 +1,36 @@
+<div class="package-page-info">
+    <div class="single-package-card">
+        <div class="image-download">
+            <img src="../../assets/images/package_img.png" alt="Package image">
+        </div>
+        <div class="package-details">
+            <div class="package-name">
+                <h1>Title: {{package.title}}</h1>
+            </div>
+            <div class="package-subtitle">
+                <h2>Creator: {{package.creator.name}}</h2>
+            </div>
+            <div class="package-description">
+                <p>
+                    {{package.intro}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="buttons-details">
+        <button type="button" class="btn-menus" (click)="showOverview()">Overview</button>
+        <button type="button" class="btn-menus" (click)="showReviews()">Reviews</button>
+        <button type="button" class="btn-menus" (click)="showSystemRequirements()">System requirements</button>
+        <button type="button" class="btn-menus" (click)="showRelated()">Related</button>
+    </div> -->
+    <div class="menu-info">
+        <h1 class="package-info-title" id="package-info-title">Overview</h1>
+        <p class="package-info-description" id="package-info-description">Description: {{package.description}}</p>
+    </div>
+    <div class="packageButton">
+        <a routerLink="update-package/{{package.id}}">
+            <button class="updatePackageInfoButton" type="button" name="button">Update Package Information</button>
+        </a>
+            <button class="updatePackageInfoButton" type="button" name="button" (click)="deletePackage(package.id)">Delete Package</button>
+    </div>
+</div>

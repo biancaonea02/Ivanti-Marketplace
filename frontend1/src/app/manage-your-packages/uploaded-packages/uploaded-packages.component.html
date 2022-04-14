@@ -1,0 +1,9 @@
+<div class="uploaded-packages">
+    <h2 class="uploaded-packages-title">Your Uploaded Packages</h2>
+    <div class="uploaded-packages-container">
+        <table *ngFor="let package of packages">
+            <app-uploaded-packages-card [id]="package.id" [title]="package.title" [intro]="package.intro">
+            </app-uploaded-packages-card>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<section class="homeFeatureSection">
+    <div class="homeFeatureContainer">
+        <div class="imgLeft">
+            <img src="../../assets/images/about.jpg" alt="">
+        </div>
+        <div class="contentRight">
+            <div class="homeFeatureTitle">
+                <h2>Download the Newest Packages</h2>
+                <h4>Ivanti Marketplace provides you with the greatest and most useful packages</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets.</p>
+            <p *ngIf="expandMore1 === true">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets.
+            </p>
+            <button class="buttonHomeFeature" (click)="expandText1()">
+                Read More
+            </button>
+        </div>
+    </div>
+
+
+    <div class="homeFeatureContainer">
+        <div class="imgRight">
+            <img src="../../assets/images/about2.png" alt="">
+        </div>
+        <div class="contentLeft">
+            <div class="homeFeatureTitle">
+                <h2>Become a Content Creator</h2>
+                <h4>Take the oportunity and become part of the development by uploading your packages</h4>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets.</p>
+            <p *ngIf="expandMore2 === true">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets.
+            </p>
+            <button class="buttonHomeFeature" (click)="expandText2()">
+                Read More
+            </button>
+        </div>
+
+
+
+    </div>
+
+</section>

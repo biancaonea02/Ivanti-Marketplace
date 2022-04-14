@@ -1,0 +1,109 @@
+.package-page-info
+{
+	margin-top: 50px;
+}
+
+.image-download img{
+	width: 350px;
+	height: 250px;
+	align-items: center;
+}
+
+.image-download
+{
+	display: flex;
+	flex-direction: column;
+	margin: 18px 20px;
+}
+
+.single-package-card
+{
+    background-color: #E8E1D9;
+}
+
+.single-package-card
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.package-details
+{
+	margin: 18px 20px;
+}
+
+.package-name h1
+{
+	font-size: 30px;
+}
+
+.package-subtitle h2
+{
+	font-size: 20px;
+}
+
+.package-description
+{
+	font-size: 17px;
+}
+
+.buttons-details
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.btn-menus
+{
+  font-size: 20px;
+  background-color: #3E065F;
+  border-color: #fff;
+  color: #fff;
+  padding: 2px 30px;
+}
+
+.btn-menus:hover
+{
+	background-color: #700B97;
+}
+
+.menu-info
+{
+	margin: 18px 20px;
+}
+
+.menu-info h1
+{
+	font-weight: 500;
+}
+
+.menu-info p 
+{
+	font-size: 17px;
+}
+
+
+.updatePackageInfoButton {
+	margin: 20px;
+	background:linear-gradient(to bottom, #ed2f2f 5%, #961616 100%);
+	background-color:#ed2f2f;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #721717;
+	border: none;
+}
+.updatePackageInfoButton:hover {
+	background:linear-gradient(to bottom, #961616 5%, #ed2f2f 100%);
+	background-color:#961616;
+}
+.updatePackageInfoButton:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,35 @@
+.add-package a
+{
+    color:#ffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: .4rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    align-items: center;
+    margin-top: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(226,18,37,1) 19%, rgba(76,4,139,1) 52%);
+    resize: none;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-package a:hover
+{
+    background: linear-gradient(90deg, rgba(76,4,139,1) 24%, rgba(226,18,37,1) 58%);
+}
+
+.uploaded-packages-title{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.uploaded-packages-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

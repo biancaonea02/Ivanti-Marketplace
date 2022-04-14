@@ -1,0 +1,20 @@
+<div class="store-hero">
+    <div class="store-intro-container">
+        <div class="store-main-heading">
+            <h1 class="store-title">EXPLORE OUR PACKAGES!</h1>
+            <h2 class="store-subtitle">
+                Explore Marketplace and choose the packages that are right for you.
+            </h2>
+        </div>
+    </div>
+
+    <div class="intro-top-packages">
+        <mat-card class="top-package" *ngFor="let package of packages">
+            <img src="../../../assets/images/ivanti.jpg">
+            <mat-card-title>{{package.title}}</mat-card-title>
+            <mat-card-content>{{package.intro}}</mat-card-content>
+            <a mat-raised-button routerLink="/store/package/details/{{package.id}}">View More</a>
+        </mat-card>
+    </div>
+
+</div>

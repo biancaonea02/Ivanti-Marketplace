@@ -1,0 +1,79 @@
+<div class="testbox">
+    <form #createNewPackage="ngForm" (ngSubmit)="onUpdatePackage(titleInput.value, descriptionInput.value, introInput.value, 
+    processorTypeInput.value, ramInput.value, graphicsCardInput.value)">
+        <div class="banner">
+            <h1>Update Package</h1>
+        </div>
+        <h2>Package Details</h2>
+        <div class="item">
+            <label for="name">Name of the package<span>*</span></label>
+            <div class="item">
+                <input type="text" name="titleInput" placeholder={{currentPackage.title}} #titleInput
+                    [(ngModel)]="currentPackage.title" />
+            </div>
+        </div>
+        <div class="item">
+            <label for="description">Description<span>*</span></label>
+            <div class="item">
+                <textarea type="text" name="descriptionInput" rows="8" cols="80"
+                    placeholder={{currentPackage.description}} #descriptionInput
+                    [(ngModel)]="currentPackage.description"></textarea>
+            </div>
+        </div>
+        <div class="item">
+            <label for="name">Intro Text<span>*</span></label>
+            <div class="item">
+                <input type="text" name="introInput" placeholder={{currentPackage.intro}} #introInput
+                    [(ngModel)]="currentPackage.intro" />
+            </div>
+        </div>
+        <h2>Version Details</h2>
+        <div class="tableVersionContainer">
+            <table>
+                <tr>
+                    <th>Version Name</th>
+                    <th>Version README</th>
+                </tr>
+                <tr *ngFor="let version of versions">
+                    <th>{{version.name}}</th>
+                    <th>{{version.readme}}</th>
+                </tr>
+                <tr>
+                    <th><input type="text" name="newVersionNameInput" placeholder="New version name" #newVersionNameInput/></th>
+                    <th><input type="text" name="newVersionReadmeInput" placeholder="New version readme" #newVersionReadmeInput/></th>
+                </tr>
+            </table>
+            <button (click)="onAddNewVersion(newVersionNameInput.value, newVersionReadmeInput.value)" class="addNewVersion">+</button>
+        </div>
+
+
+        <h2>System requirements</h2>
+        <div class="item">
+            <label for="name">Processor Type<span>*</span></label>
+            <div class="item">
+                <input type="text" name="processorTypeInput"
+                    placeholder={{currentPackage.systemRequirements.processorType}} #processorTypeInput
+                    [(ngModel)]="currentPackage.systemRequirements.processorType" />
+            </div>
+        </div>
+        <div class="item">
+            <label for="name">RAM<span>*</span></label>
+            <div class="item">
+                <input type="text" name="ramInput" placeholder={{currentPackage.systemRequirements.ram}} #ramInput
+                    [(ngModel)]="currentPackage.systemRequirements.ram" />
+            </div>
+        </div>
+        <div class="item">
+            <label for="name">Graphics Card<span>*</span></label>
+            <div class="item">
+                <input type="text" name="graphicsCardInput"
+                    placeholder={{currentPackage.systemRequirements.graphicsCard}} #graphicsCardInput
+                    [(ngModel)]="currentPackage.systemRequirements.graphicsCard" />
+            </div>
+        </div>
+        <div class="btn-block">
+            <button type="submit">Update The Package</button>
+        </div>
+        <p class="update-message">{{message}}</p>
+    </form>
+</div>
